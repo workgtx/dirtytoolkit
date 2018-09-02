@@ -43,8 +43,8 @@ class GrabData:
         return(self.url)
 
     def get_data_f (self):
-        __headers = {'X-Futuware-UID': '39519',\
-        'X-Futuware-SID': 'bd2a59179eb2cb014c0f0c5fa30e5498'}
+        __headers = {'X-Futuware-UID': '',\
+                     'X-Futuware-SID': ''}
         self.response = ''
         if self.method == 'upvoters' or 'downvoters':
             self.response = (requests.get(self.url, headers = __headers)).content

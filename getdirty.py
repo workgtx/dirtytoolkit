@@ -87,11 +87,3 @@ class Extractor:
         userposts.separator_f()
         return (userposts.numofitems, userposts.numofpages, userposts.separated)
 
-posts = Extractor('tot_samij')
-items, npages, data = posts.userposts_f()
-print(items, npages, data)
-
-#jepebrilo = Extractor(index = 639468 )
-#jepebrilo.postvoters_f()
-#print(jepebrilo.postupvoters[0][2],'...', jepebrilo.postupvoters[-1][2], len(jepebrilo.postupvoters), '\n\n', jepebrilo.postdownvoters[0][2], '...', jepebrilo.postdownvoters[-1][2], len(jepebrilo.postdownvoters))
-#print(jepebrilo.postupvoters, jepebrilo.postdownvoters)
